@@ -1,0 +1,23 @@
+#服务端口号
+server:
+  port: 8080
+#JDBC
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123
+    url: jdbc:mysql://localhost:3306/gmall_study
+
+
+#mybatis配置
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml   #扫描mapper文件
+  configuration:
+    map-underscore-to-camel-case: true    #转成驼峰命名
+
+
+#日记级别  打印sql语句
+  #logging:
+    #  level:
+  #   root: debug
